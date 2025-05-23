@@ -1,0 +1,150 @@
+/* MEDIEVAL THEME for Krunker.io */
+/* v1.0 - May 2025 */
+
+/* --- Medieval Variables --- */
+:root {
+  --parchment: #f9f4e7;
+  --deep-red: #7c2323;
+  --royal-gold: #bfa14a;
+  --forest-green: #3d5c2c;
+  --iron-grey: #4b4b4b;
+  --ink-black: #231f20;
+  --accent-color: var(--royal-gold);
+  --menu-bg-color: #f5ecd6;
+  --menu-border-color: #bfa14a;
+  --ingame-bg-color: rgba(249, 244, 231, 0.8);
+  --text-main: #231f20;
+  --header-font: 'UnifrakturCook', 'Old English Text MT', 'Garamond', serif;
+}
+
+/* --- Medieval Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
+
+/* --- General Text Styling --- */
+body, html {
+  font-family: 'EB Garamond', Garamond, serif;
+  color: var(--text-main);
+  background: var(--parchment);
+  letter-spacing: 2.5px;
+}
+
+/* --- Medieval Headings & Accents --- */
+h1, h2, h3, .menuItemTitle, .tabHeader.selected, .accent, .button {
+  font-family: var(--header-font);
+  color: var(--deep-red) !important;
+  text-shadow: 1px 1px 0 var(--royal-gold), 0 0 4px #fff2;
+  letter-spacing: 4px;
+  border-bottom: 4px solid var(--royal-gold);
+  background: linear-gradient(90deg, #fffbe8 80%, #e5c57d 100%);
+  padding: 0.2em 0.5em;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 0.5em;
+}
+
+/* --- Medieval Buttons --- */
+.button, .buttonPI, .buttonR, .buttonP, .buttonG, .button.lgn {
+  background: linear-gradient(90deg, var(--deep-red), var(--forest-green));
+  color: #fff !important;
+  border: 2px solid var(--royal-gold);
+  border-radius: 82px;
+  font-family: var(--header-font);
+  font-size: 20px !important;
+  text-shadow: 1px 1px 0 var(--iron-grey);
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+  box-shadow: 0 0 8px #bfa14a44;
+}
+.button:hover {
+  background: linear-gradient(270deg, var(--royal-gold), var(--deep-red));
+  color: var(--deep-red) !important;
+  box-shadow: 0 0 16px var(--royal-gold);
+}
+
+/* --- Medieval Links --- */
+a, a:visited, a:active {
+  color: var(--deep-red);
+  text-decoration: underline wavy var(--royal-gold);
+  font-weight: bold;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--royal-gold);
+  text-decoration: underline wavy var(--deep-red);
+}
+
+/* --- Medieval Inputs --- */
+input, .smlInput, .accountInput {
+  background: #f7f3e7 !important;
+  color: var(--ink-black) !important;
+  border: 2px solid var(--forest-green);
+  border-radius: 6px !important;
+  font-family: 'EB Garamond', Garamond, serif;
+  box-shadow: 0 0 6px #bfa14a33;
+}
+input::placeholder, .smlInput::placeholder, .accountInput::placeholder {
+  color: var(--iron-grey) !important;
+  font-style: italic;
+}
+
+/* --- Medieval HUD --- */
+#healthValue, #ammoVal {
+  color: var(--deep-red);
+  text-shadow: 1px 1px 0 var(--royal-gold), 0 0 6px #fff2;
+  font-size: 64px;
+  font-family: var(--header-font), serif;
+}
+#ammoVal {
+  color: var(--forest-green);
+}
+
+/* --- Medieval Progress Bars --- */
+.progressBar, .xpBar, .chalXPBar, .classXPBar {
+  background: #e5c57d;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #bfa14a55;
+  border: 2px solid var(--royal-gold);
+}
+.progressBarInner, .xpBarB, .chalXPBarC, .clsXPBarC {
+  background: linear-gradient(90deg, var(--deep-red), var(--royal-gold));
+  border-radius: 8px;
+  box-shadow: 0 0 8px var(--royal-gold);
+}
+
+/* --- Medieval Popups --- */
+#claimPop, #clientExitPop, #menuWindow, .mailObj, .chalCard, .endCard {
+  background: var(--menu-bg-color);
+  border: 3px solid var(--menu-border-color);
+  box-shadow: 0 0 16px #bfa14a77;
+  border-radius: 12px;
+}
+
+/* --- Medieval Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e5c57d;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--royal-gold), var(--deep-red));
+  border-radius: 6px;
+  box-shadow: 0 0 8px #bfa14a88;
+}
+
+/* --- Hide Unwanted Elements --- */
+#aHolder, .endAHolder, #mainLogo, #merchImg, #seasonLabel, #onetrust-consent-sdk, #braveWarning, #youNewDiv, #newsHolder, .krSocial, #editorBtnM, .imageButton, #policeButton, #menuMiniProfilePic, #menuLevelIcon, #customizeButton .material-icons, #voiceDisplay, #curGameInfo, .serverPing {
+  display: none !important;
+}
+
+/* --- Miscellaneous Medieval Touches --- */
+.material-icons, .material-icons.vote {
+  color: var(--royal-gold) !important;
+  text-shadow: 1px 1px 0 var(--deep-red);
+  font-size: 26px;
+}
+.voteHint, .readAll, .subPassChg, .lnkTw {
+  color: var(--forest-green);
+  font-style: italic;
+}
+.voteHint:hover, .readAll:hover, .subPassChg:hover, .lnkTw:hover {
+  color: var(--deep-red);
+  text-shadow: 0 0 6px var(--royal-gold);
+}
