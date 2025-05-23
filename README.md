@@ -1,4 +1,4 @@
-# Krunker.io CSS - Custom CSS themes ⚔️🔥
+# Krunker.io CSS themes ⚔️🔥
 
 ## How to Install Your Custom CSS Theme
 - Open Krunker.io in your browser.
