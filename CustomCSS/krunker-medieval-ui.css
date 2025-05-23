@@ -128,10 +128,6 @@ input::placeholder, .smlInput::placeholder, .accountInput::placeholder {
   box-shadow: 0 0 8px #bfa14a88;
 }
 
-/* --- Hide Unwanted Elements --- */
-#aHolder, .endAHolder, #mainLogo, #merchImg, #seasonLabel, #onetrust-consent-sdk, #braveWarning, #youNewDiv, #newsHolder, .krSocial, #editorBtnM, .imageButton, #KPDButton, #menuMiniProfilePic, #menuLevelIcon, #customizeButton .material-icons, #voiceDisplay, #curGameInfo, .serverPing {
-  display: none !important;
-}
 
 /* --- Miscellaneous Medieval Touches --- */
 .material-icons, .material-icons.vote {
