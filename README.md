@@ -1,6 +1,6 @@
 # Krunker.io CSS themes ⚔️🔥
 
-## How to Install Your Custom CSS Theme
+## How to Install Your Custom CSS Theme (temporarily)
 - Open Krunker.io in your browser.
 
 - Open Developer Tools (F12 or right-click → Inspect).
