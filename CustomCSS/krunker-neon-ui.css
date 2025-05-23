@@ -1,0 +1,172 @@
+/* CYBERPUNK & NEON THEME for Krunker.io - Improved Readability */
+/* v1.1 - May 2025 */
+
+
+:root {
+  --neon-pink: #ff00c8;
+  --neon-blue: #00fff7;
+  --neon-yellow: #ffe600;
+  --neon-green: #39ff14;
+  --neon-purple: #9d00ff;
+  --accent-color: var(--neon-pink);
+  --health-color: var(--neon-green);
+  --ammo-color: var(--neon-yellow);
+  --premium-color: var(--neon-blue);
+  --verified-color: var(--neon-purple);
+  --menu-bg-color: rgba(10, 10, 30, 0.85);
+  --menu-bg-color-secondary: rgba(20, 0, 30, 0.85);
+  --ingame-bg-color: rgba(0, 0, 0, 0.55);
+  --text-main: #e5e5ff;
+}
+
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@font-face {
+  font-family: 'CyberFont';
+  src: url('https://fonts.gstatic.com/s/inter/v2/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2');
+}
+
+/* --- General Text Styling --- */
+body, html {
+  font-family: 'Orbitron', 'CyberFont', Arial, sans-serif;
+  color: var(--text-main);
+  background: #0a001a;
+  letter-spacing: 2.2px;
+}
+
+/* --- Neon Headings --- */
+.neon, h1, h2, h3, .menuItemTitle, .tabHeader.selected, .accent, .button {
+  color: var(--accent-color) !important;
+  text-shadow:
+    0 0 5px var(--accent-color),
+    0 0 10px var(--accent-color),
+    0 0 20px var(--accent-color),
+    0 0 40px var(--accent-color),
+    0 0 80px var(--accent-color);
+  text-transform: uppercase;
+  animation: neon-flicker 2.5s infinite alternate;
+}
+
+/* --- Neon Flicker Animation --- */
+@keyframes neon-flicker {
+  0%, 100% { opacity: 1; }
+  48% { opacity: 0.85; }
+  50% { opacity: 0.6; }
+  52% { opacity: 0.85; }
+}
+
+/* --- Neon Buttons --- */
+.button, .buttonPI, .buttonR, .buttonP, .buttonG, .button.lgn {
+  background: linear-gradient(90deg, var(--neon-pink), var(--neon-blue));
+  border: none;
+  border-radius: 11px;
+  color: #fff !important;
+  font-size: 20px !important;
+  box-shadow: 0 0 8px var(--accent-color), 0 0 16px var(--accent-color);
+  text-shadow: 0 0 6px #fff, 0 0 12px var(--accent-color);
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+.button:hover {
+  background: linear-gradient(270deg, var(--neon-yellow), var(--neon-pink));
+  color: var(--neon-blue) !important;
+  box-shadow: 0 0 24px var(--neon-yellow), 0 0 32px var(--neon-pink);
+}
+
+/* --- Neon Links --- */
+a, a:visited, a:active {
+  color: var(--neon-blue);
+  text-shadow: 0 0 4px var(--neon-blue), 0 0 8px var(--neon-blue);
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--neon-yellow);
+  text-shadow: 0 0 8px var(--neon-yellow), 0 0 16px var(--neon-yellow);
+}
+
+/* --- Neon Inputs --- */
+input, .smlInput, .accountInput {
+  background: var(--menu-bg-color-secondary) !important;
+  color: var(--neon-blue) !important;
+  border: 2px solid var(--neon-pink);
+  border-radius: 6px !important;
+  box-shadow: 0 0 6px var(--neon-blue);
+}
+input::placeholder, .smlInput::placeholder, .accountInput::placeholder {
+  color: var(--neon-purple) !important;
+  text-shadow: 0 0 4px var(--neon-purple);
+}
+
+
+/* --- Neon HUD --- */
+#healthValue, #ammoVal {
+  color: var(--health-color);
+  text-shadow:
+    0 0 8px var(--health-color),
+    0 0 16px var(--health-color),
+    0 0 32px var(--health-color);
+  font-size: 3.2rem;
+  font-family: 'Orbitron', monospace;
+  background: var(--ingame-bg-color);
+  border-radius: 0.5em;
+  padding: 0.2em 0.8em;
+}
+#ammoVal {
+  color: var(--ammo-color);
+  text-shadow:
+    0 0 8px var(--ammo-color),
+    0 0 16px var(--ammo-color),
+    0 0 32px var(--ammo-color);
+}
+
+/* --- Neon Progress Bars --- */
+.progressBar, .xpBar, .chalXPBar, .classXPBar {
+  background: var(--menu-bg-color-secondary);
+  border-radius: 8px;
+  box-shadow: 0 0 6px var(--neon-purple);
+}
+.progressBarInner, .xpBarB, .chalXPBarC, .clsXPBarC {
+  background: linear-gradient(90deg, var(--neon-pink), var(--neon-blue));
+  border-radius: 8px;
+  box-shadow: 0 0 8px var(--neon-pink);
+}
+
+/* --- Neon Popups --- */
+#claimPop, #clientExitPop, #menuWindow, .mailObj, .chalCard, .endCard {
+  background: var(--menu-bg-color);
+  border: 2px solid var(--neon-pink);
+  box-shadow: 0 0 12px var(--neon-blue);
+  border-radius: 12px;
+}
+
+/* --- Neon Scrollbar --- */
+::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--neon-pink), var(--neon-blue));
+  border-radius: 6px;
+  box-shadow: 0 0 8px var(--neon-pink);
+}
+
+/* --- Hide Unwanted Elements --- */
+#aHolder, .endAHolder, #mainLogo, #merchImg, #seasonLabel, #onetrust-consent-sdk, #braveWarning, #youNewDiv, #newsHolder, .krSocial, #editorBtnM, .imageButton, #policeButton, #menuMiniProfilePic, #menuLevelIcon, #customizeButton .material-icons, #voiceDisplay, #curGameInfo, .serverPing {
+  display: none !important;
+}
+
+/* --- Miscellaneous Neon Touches --- */
+.material-icons, .material-icons.vote {
+  color: var(--neon-yellow) !important;
+  text-shadow: 0 0 6px var(--neon-yellow);
+  font-size: 26px;
+}
+.voteHint, .readAll, .subPassChg, .lnkTw {
+  color: var(--neon-blue);
+  text-shadow: 0 0 4px var(--neon-blue);
+}
+.voteHint:hover, .readAll:hover, .subPassChg:hover, .lnkTw:hover {
+  color: var(--neon-pink);
+  text-shadow: 0 0 8px var(--neon-pink);
+}
+
+
