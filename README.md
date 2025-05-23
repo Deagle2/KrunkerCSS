@@ -5,7 +5,7 @@
 
 - Open Developer Tools (F12 or right-click → Inspect).
 
-- Go to the Sources tab.
+- Go to the Sources tab → Top → krunker.io
 
 - Navigate to the css folder → open main_custom.css.
 
